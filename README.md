@@ -43,7 +43,7 @@ Train a hummingbird agent in a simulated 3D environment to fly, hover, and colle
 
 ## 📷 Screenshots
 
-*(Insert a screenshot or training graph from TensorBoard here if available)*
+
 
 ---
 
