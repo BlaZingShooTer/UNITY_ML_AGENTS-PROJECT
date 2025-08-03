@@ -9,6 +9,10 @@ This project explores reinforcement learning using **Unity ML-Agents Toolkit** t
 
 Train a hummingbird agent in a simulated 3D environment to fly, hover, and collect nectar using reinforcement learning techniques.
 
+
+
+
+
 ---
 
 ## 🚀 Features
@@ -43,7 +47,13 @@ Train a hummingbird agent in a simulated 3D environment to fly, hover, and colle
 
 ## 📷 Screenshots
 
+TensorBoard result
+<img width="1920" height="916" alt="Screenshot (37)" src="https://github.com/user-attachments/assets/724a3ad0-4a8c-48cc-9b2c-9819f7196c99" />
+<img width="1920" height="915" alt="Screenshot (38)" src="https://github.com/user-attachments/assets/e2ed9746-ff84-49b7-8b1f-095437f53806" />
+<img width="859" height="499" alt="Screenshot (39)" src="https://github.com/user-attachments/assets/eb356f1c-6ccc-4260-b233-985b9397ea34" />
 
+
+https://github.com/user-attachments/assets/6f6b23d7-55e6-4590-8dbc-7ffc56414cc9
 
 ---
 
