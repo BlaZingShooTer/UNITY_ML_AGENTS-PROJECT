@@ -2,9 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// Manages a collection of flower plants and attached flowers
-/// </summary>
 public class FlowerArea : MonoBehaviour
 {
     // The diameter of the area where the agent and flowers can be
@@ -63,6 +60,11 @@ public class FlowerArea : MonoBehaviour
         nectarFlowerDictionary = new Dictionary<Collider, Flower>();
         Flowers = new List<Flower>();
 
+        
+    }
+
+    private void Start()
+    {
         // Find all flowers that are children of this GameObject/Transform
         FindChildFlowers(transform);
     }
@@ -94,25 +96,15 @@ public class FlowerArea : MonoBehaviour
                     // Found a flower, add it to the Flowers list
                     Flowers.Add(flower);
 
-                    // Safely try to add the nectar collider
-                    if (flower.nectarCollider == null)
-                    {
-                        Debug.LogWarning($"Flower '{flower.name}' is missing a nectarCollider reference!", flower);
-                    }
-                    else if (!nectarFlowerDictionary.ContainsKey(flower.nectarCollider))
-                    {
-                        nectarFlowerDictionary.Add(flower.nectarCollider, flower);
-                    }
-                    else
-                    {
-                        Debug.LogWarning($"Duplicate nectarCollider found on flower '{flower.name}'!", flower);
-                    }
+                    // Add the nectar collider to the lookup dictionary
+                    nectarFlowerDictionary.Add(flower.nectarCollider, flower);
+
+                    // Note: there are no flowers that are children of other flowers
                 }
                 else
                 {
                     // Flower component not found, so check children
                     FindChildFlowers(child);
-                   
                 }
             }
         }

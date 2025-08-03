@@ -1,11 +1,7 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// Manages a single flower with nectar
-/// </summary>
 public class Flower : MonoBehaviour
 {
     [Tooltip("The color when the flower is full")]
